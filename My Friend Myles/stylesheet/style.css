@@ -1,0 +1,201 @@
+/*Import Google Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*NAVBAR*/
+
+.nav-bar{
+
+position: sticky;
+top: 0;
+z-index: 4; /*Setting the postion of the nav-bar in
+the stack layer so its on top*/
+
+}
+
+
+
+ul{
+list-style-type: none;
+background-color: #4b5350;
+margin: 10px -10px 0px -10px;
+overflow: hidden; /*Hides excess margin space*/
+display: flex; /*take up as much of the width as avail.*/
+align-items: center;
+}
+
+
+
+a{
+display: block;
+font-family: "Roboto", sans-serif;
+font-size: 23px;
+font-weight: 700px;
+text-decoration: none;
+text-transform: uppercase;
+width: 100px;
+padding: 30px;
+text-align: center;
+transition: background-color 0.4s ease-in;
+
+}
+
+
+
+/*NAVBAR ROLLOVER EFFECTS*/
+
+a:hover, .drop:hover{
+background-color: blanchedalmond;
+color: rgb(49, 49, 49);
+box-shadow: 0px 8px 16px 0px rgba(0,0,0, 0.7);
+transition: background-color 0.3s ease-in;
+}
+
+/*Hides the anchor links within the images link div tag*/
+
+.rollover-menu{
+display: none;
+position:absolute;
+background-color: white;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0, 0.2);
+}
+
+
+
+.drop:hover .rollover-menu{
+display: block;
+}
+
+
+
+.rollover-menu a{
+color: #4b5350;
+}
+
+
+
+.rollover-menu a:hover{
+color: white;
+}
+
+/*styles the first anchor element child within the rollover-menu div tag*/
+
+.rollover-menu a:hover:nth-child(1){
+background-color: rgb(117, 20, 20);
+}
+
+/*styles the second anchor element child within the rollover-menu div tag*/
+
+.rollover-menu a:hover:nth-child(2){
+background-color: rgb(87, 7, 7);
+}
+
+/*Specifically styles the third anchor element child within the rollover-menu div tag*/
+
+.rollover-menu a:hover:nth-child(3){
+background-color: rgb(48, 2, 2);
+}
+
+
+
+/*FOOTER*/
+
+footer{
+
+background-color: #4b5350;
+margin: 30px -10px -10px -10px; /*Margin value order top, right, bottom, and left*/
+overflow: hidden; /*hides margin space expaning past the browser
+window edge prevents a left to right scroll bar*/
+height: 70px;
+
+}
+
+.roolver-me
+
+/*NAVBAR ROLLOVER EFFECTS*/
+
+a:hover, .drop:hover /*drop:hoover triggers when any one of the links in
+
+the image list tag is being hovered over*/{
+
+background-color: rgb(228, 159, 0);
+color: rgb(49, 49, 49);
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
+transition: background-color 0.3s ease-in;
+
+}
+
+/*Styles the text in the footer*/
+
+.footer-text{
+font-family: "Roboto", sans-serif;
+font-size: 23px;
+font-weight: 400;
+color:rgb(228, 159, 0);
+text-align: center;
+}
+
+
+/*IMAGES*/
+
+img{
+ width: 700px;
+ height: 550px;
+ background
+}
+
+
+
+/*Creates a container for eeach image to be held in */
+
+.image-container{
+display: flex;
+justify-content: center;
+padding-top: 120px;
+
+}
+#image3{
+padding-bottom: 170px;
+}
+
+/*IMAGE TWO*/
+
+.zoom{
+ transform: scale(1); /* sets teh base size of image 2 for a zoom in effect*/
+ transition: 0.5s; /*Creates a smooth transition of the image zooming back into its original size*/
+ z-index: 3; /*sets iimage postionint he stack layer behind navbar so
+
+    zoom effects does not cover the navbar*/
+
+}
+
+/*Creates a zoom in effect on image two */
+
+.zoom:hover{
+
+transform: scale(1.1); /*Scales image 2 to grow half its size*/
+transition: 0.5s ease-out;
+
+}
+
+.about-myles {
+    max-width: 900px; /* Limit width for readability */
+    margin: 50px auto; /* This centers the block itself horizontally */
+    padding: 30px;
+    background-color: #ffffff; /* White background */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; 
+}
+
+.about-myles p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.image-gallery {
+    padding-top: 50px;
+    margin-top: 30px;
+}
