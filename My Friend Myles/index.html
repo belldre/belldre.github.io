@@ -34,6 +34,17 @@
         <br>He brings so much joy and laughter into my life. His playful antics, affectionate purrs, and intelligent gaze
         <br>make every day an adventure. He's not just a pet; he's a cherished member of the family.</p>
     </section>
+	
+	<!-- New JavaScript Fun Fact Section -->
+    <section class="fun-fact-section" style="text-align: center; margin: 40px auto; padding: 25px; background-color: #f8f8f8; border-radius: 10px; max-width: 700px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <h2 style="color: #4CAF50; margin-bottom: 20px;">Myles' Fun Fact Corner!</h2>
+        <p id="funFactDisplay" style="font-size: 1.1em; color: #555; margin-bottom: 25px; line-height: 1.6;">Click the button to discover a fun fact about Bengal cats!</p>
+        <button onclick="displayFunFact()" 
+                style="padding: 12px 25px; font-size: 1em; background-color: #FF9800; color: white; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;">
+            Show Me a Fact!
+        </button>
+    </section>
+
     <div class="image-container" id="image1">
         <img src="images/cat.jpg" class="zoom" alt="Bengal Cat">
     </div>
@@ -52,7 +63,37 @@
             <p>The Tech Academy &copy;</p>
         </div>
     </footer>
+    <script>
+        // Array of fun facts about Bengal cats
+        const funFacts = [
+            "Bengal cats are known for their love of water and may even join you in the shower!",
+            "Their distinctive 'rosetted' coat patterns are similar to those found on leopards and jaguars.",
+            "Bengals are highly intelligent and can be trained to do tricks, walk on a leash, and play fetch.",
+            "Myles, at 18, is a senior Bengal, showcasing the breed's impressive longevity!",
+            "Unlike many domestic cats, Bengals often enjoy playing in water.",
+            "The Bengal breed originated from cross-breeding domestic cats with the Asian Leopard Cat."
+        ];
 
+        let currentFactIndex = 0; // Keep track of the current fact to display
+
+        // Function to display a new fun fact
+        function displayFunFact() {
+            const factDisplayElement = document.getElementById('funFactDisplay');
+            
+            // Update the text with the current fact
+            factDisplayElement.textContent = funFacts[currentFactIndex];
+            
+            // Move to the next fact, looping back to the beginning if at the end
+            currentFactIndex = (currentFactIndex + 1) % funFacts.length;
+
+            // Optional: Add a subtle animation or style change
+            factDisplayElement.style.transform = 'scale(1.02)';
+            factDisplayElement.style.color = '#333';
+            setTimeout(() => {
+                factDisplayElement.style.transform = 'scale(1)';
+            }, 150);
+        }
+    </script>
 </body>
 
 </html>
