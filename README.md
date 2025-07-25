@@ -8,7 +8,7 @@ Welcome to my portfolio! This repository showcases my journey from a Network Eng
 
 - [About Me](#about-me)
 - [Projects](#projects)
-  - [The Life of A Bengal Cat](#the-life-of-a-bengal-cat)
+- [The Life of A Bengal Cat](#the-life-of-a-bengal-cat)
 - [Contact](#contact)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
